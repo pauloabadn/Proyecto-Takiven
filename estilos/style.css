@@ -365,6 +365,15 @@ footer .texto .siguenos ul li{
     .me-auto {
         margin-right: 0!important;
     }
+    .navbar-expand-lg .navbar-nav .nav-link:hover{
+        color: #F9D163;
+        transition: 1s ease;
+    }
+    .registro:hover{
+        background-color: transparent;
+        transition: 1s ease;
+        border: #F9D163 solid 1px;
+    }
     .navbar-expand-lg .navbar-nav .nav-link {
         font-family: 'Roboto';
         font-weight: 500;
