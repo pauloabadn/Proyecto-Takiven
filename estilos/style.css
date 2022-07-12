@@ -455,3 +455,54 @@ footer .texto .siguenos ul li{
             grid-template-columns: 1fr 1fr;
         }
     }
+
+    @media screen and (max-width: 426px){
+        main .contenedor_home {
+            grid-template-columns: 1fr;
+        }
+        footer{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            grid-template-columns: 1fr;
+        }
+        footer .texto .suscribete form input {
+            position:inherit;
+        }
+        footer .siguenos ul{
+            padding: 0;
+        }
+        .copyright{
+            font-size: 12px;
+        }
+
+        /*CARACTERISTICAS*/
+        main .contenedor .principal {
+            grid-template-columns: 1fr;
+        }
+        /*COMO FUNCIONA*/
+        main .contenedor .texto_como h3 {
+            font-size: 25px;
+        }
+        main .contenedor .texto_como P{
+            font-size: 15px;
+        }
+        main .contenedor .pasos_como .caja {
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
+    }
+    @media screen and (max-width: 376px){
+        .navbar-brand {
+            width: 150px;
+        }
+        main .contenedor_home .texto_home {
+            grid-template-rows: 150px 100px;
+        }
+        main .contenedor_home .texto_home h1 {
+            font-size: 30px;
+        }
+        main .contenedor_home .texto_home p {
+            font-size: 13.5px;
+        }
+    }
