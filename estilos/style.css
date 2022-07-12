@@ -465,7 +465,7 @@ footer .texto .siguenos ul li{
         }
     }
 
-    @media screen and (max-width: 426px){
+    @media screen and (max-width: 501px){
         main .contenedor_home {
             grid-template-columns: 1fr;
         }
