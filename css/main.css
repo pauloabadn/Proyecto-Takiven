@@ -128,10 +128,16 @@ main {
       main .contenedor_home .texto_home p {
         font-size: 20px; }
       main .contenedor_home .texto_home .texto_home_boton a {
-        color: #3FD077;
-        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        background-color: #3FD077;
         border: 1px solid #3FD077;
-        transition: 1s ease; }
+        padding: 15px;
+        border-radius: 10px; }
+        main .contenedor_home .texto_home .texto_home_boton a:hover {
+          color: #3FD077;
+          background-color: transparent;
+          transition: 1s ease-in-out; }
     main .contenedor_home img {
       width: 100%; }
   main .titulopreguntas {
