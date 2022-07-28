@@ -206,7 +206,8 @@ footer {
 
 /*BOSTRAP*/
 .accordion-flush {
-  /*PREGUNTAS Y DUDAS*/ }
+  /*PREGUNTAS Y DUDAS*/
+  right: auto; }
   .accordion-flush .accordion-item .accordion-button {
     border: 2px solid #3FD077;
     margin-bottom: 1%;

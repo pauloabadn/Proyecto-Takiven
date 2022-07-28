@@ -30,3 +30,9 @@ $medidas:(
     width: 100%;
     color:$txcolor;
     padding-bottom: 10px; }
+
+@mixin mediaQuery($pantalla) {
+    @media screen and (min-width: 720px){
+        
+    }
+}
