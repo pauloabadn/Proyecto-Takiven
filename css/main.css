@@ -1,3 +1,13 @@
+/*EXTEND*/
+main .contenedor_home .texto_home .texto_home_boton a {
+  color: white;
+  text-decoration: none;
+  background-color: #3FD077;
+  border: 1px solid #3FD077;
+  padding: 15px;
+  border-radius: 10px; }
+
+/*MIXIN*/
 * {
   padding: 0;
   margin: 0; }
@@ -127,17 +137,10 @@ main {
         font-size: 50px; }
       main .contenedor_home .texto_home p {
         font-size: 20px; }
-      main .contenedor_home .texto_home .texto_home_boton a {
-        color: white;
-        text-decoration: none;
-        background-color: #3FD077;
-        border: 1px solid #3FD077;
-        padding: 15px;
-        border-radius: 10px; }
-        main .contenedor_home .texto_home .texto_home_boton a:hover {
-          color: #3FD077;
-          background-color: transparent;
-          transition: 1s ease-in-out; }
+      main .contenedor_home .texto_home .texto_home_boton a:hover {
+        color: #3FD077;
+        background-color: transparent;
+        transition: 1s ease-in-out; }
     main .contenedor_home img {
       width: 100%; }
   main .titulopreguntas {
@@ -196,7 +199,7 @@ footer {
 
 .copyright {
   text-align: center;
-  background-color: #2B2B2B;
+  background-color: black;
   width: 100%;
   color: white;
   padding-bottom: 10px; }
@@ -251,3 +254,14 @@ footer {
   width: 200px; }
   .navbar-brand img {
     width: 100%; }
+
+/*EXTEND*/
+main .contenedor_home .texto_home .texto_home_boton a {
+  color: white;
+  text-decoration: none;
+  background-color: #3FD077;
+  border: 1px solid #3FD077;
+  padding: 15px;
+  border-radius: 10px; }
+
+/*MIXIN*/

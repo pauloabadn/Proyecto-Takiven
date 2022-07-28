@@ -2,3 +2,31 @@ $c0:#3FD077;
 $c1:#FCD462;
 $c2:#34A560;
 $c3:white;
+
+$medidas:(
+    "xs": (200px),
+    "sm": (576px),
+    "md": (768px),
+    "lg": (992px),
+    "xl": (1200px)
+);
+
+ /*EXTEND*/
+
+ %boton{
+    color: $c3;
+    text-decoration: none;
+    background-color: $c0;
+    border: 1px solid $c0;
+    padding: 15px;
+    border-radius: 10px;
+ }
+
+ /*MIXIN*/
+
+ @mixin copyright ($bgcolor, $txcolor) {
+    text-align: center;
+    background-color:$bgcolor ;
+    width: 100%;
+    color:$txcolor;
+    padding-bottom: 10px; }
