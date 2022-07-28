@@ -26,6 +26,10 @@ main{
         .boton_general{
             text-align: center;
             margin-top: 6%;
+            @include mediaQuery('1024'){
+                text-align: center;
+                margin-top: 4%;
+            }
             a{
                 font-size: 20px;
                 font-weight: 700;
@@ -45,6 +49,12 @@ main{
         .principal{ /*CARACTERISTICAS*/ 
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            @include mediaQuery('768'){
+                grid-template-columns: 1fr 1fr;
+            }
+            @include mediaQuery('501'){
+                grid-template-columns: 1fr;
+            }
             .secundario{
                 display: grid;
                 grid-template-rows: 1fr 0.4fr 0.5fr;
@@ -53,8 +63,16 @@ main{
                 justify-items: center;
                 text-align: center;
                 gap: 5%;
+                @include mediaQuery('1024'){
+                    grid-template-rows: 0fr 0.4fr 0.5fr;
+                }
                 img{
                     width: 100%;
+                }
+                h3{
+                    @include mediaQuery('1024'){
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -66,6 +84,12 @@ main{
                 margin-bottom: 2%;
                 font-size: 35px;
                 color: #F9D163;
+                @include mediaQuery('501'){
+                    font-size: 25px;
+                }
+            }
+            p{
+                font-size: 15px;
             }
         }
         .pasos_como{
@@ -75,6 +99,10 @@ main{
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
                 gap: 10px;
+                @include mediaQuery('501'){
+                    grid-template-columns: 1fr;
+                    gap: 5px;
+                }
                 div{
                     display: grid;
                     align-items: center;
@@ -102,6 +130,14 @@ main{
                         h3{
                             font-weight: 400;
                             font-size: 16px;
+                            @include mediaQuery('1024'){
+                                font-size: 14px;
+                            }
+                        }
+                        p{
+                            @include mediaQuery('1024'){
+                                font-size: 13px;
+                            }
                         }
                     }
                     .blanco {
@@ -145,21 +181,46 @@ main{
         padding: 0 15%;
         background:url(../imagenes/fondoprincipal.png);
         background-position: sticky;
+        @include mediaQuery('1024'){
+            align-items: center;
+        }
+        @include mediaQuery('501'){
+            grid-template-columns: 1fr;
+        }
         .texto_home{
             display: grid;
             grid-template-rows: 200px 100px ;
             gap: 10px 100px;
             padding: 15% 0;
+            @include mediaQuery('501'){
+                grid-template-columns: 150px 100px;
+            }
             h1{
                 color: $c1;
                 font-size: 50px;
+                @include mediaQuery('1024'){
+                    font-size: 40px;
+                }
+                @include mediaQuery('501'){
+                    font-size: 30px;
+                }
             }
             p{
                 font-size: 20px;
+                @include mediaQuery('1024'){
+                    font-size: 15px;
+                }
+                @include mediaQuery('501'){
+                    font-size: 13.5px;
+                    font-weight: 300;
+                }
             }
             .texto_home_boton{
                 a{
                     @extend %boton;
+                    @include mediaQuery('1024'){
+                        font-size: 15px;
+                    }
                     &:hover{
                         color: $c0;
                         background-color: transparent;
@@ -186,17 +247,32 @@ footer{
     padding: 2% 15%;
     background-color: #2B2B2B;
     color: $c3;
+    @include mediaQuery('501'){
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
     .mapa{
         h2{
             margin-bottom: 10px;
         }
         iframe{
             border-radius: 15px;
+            @include mediaQuery('1024'){
+                width: 300px;
+            }
+            @include mediaQuery('768'){
+                width: 250px;
+            }
         }
     }
     .texto{
         display: grid;
         grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        @include mediaQuery('768'){
+            grid-template-rows: 0.9fr 0.5fr 0.5fr;
+        }
         .suscribete{
             h2{
                 margin-bottom: 10px;
@@ -213,6 +289,15 @@ footer{
                     position: absolute;
                     padding: 10px;
                     color: white;
+                    @include mediaQuery('1024'){
+                        height: 40px;
+                    }
+                    @include mediaQuery('768'){
+                        height: 40px;
+                    }
+                    @include mediaQuery('501'){
+                        position: inherit;
+                    }
                 }
                 button{
                     position: absolute;
@@ -224,6 +309,9 @@ footer{
                     border-radius: 10px;
                     color: white;
                     font-weight: 700;
+                    @include mediaQuery('1024'){
+                        left: 87%;
+                    }
                 }
             }
         }
@@ -243,6 +331,9 @@ footer{
                     padding-left: 2%;
                     display: inline;
                 }
+                @include mediaQuery('501'){
+                    padding: 0
+                }
             }
         }
     }
@@ -250,6 +341,9 @@ footer{
 
 .copyright{
     @include copyright (black, white);
+    @include mediaQuery('501'){
+        font-size: 12px;
+    }
 }
 
 /*BOSTRAP*/
@@ -288,10 +382,17 @@ footer{
 }
 .navbar-expand-lg{
     .navbar-nav{
+        @include mediaQuery('768'){
+            align-items: center;
+            justify-content: center;
+        }
         .nav-link{
             font-family: 'Roboto';
             font-weight: 500;
             color: $c3;
+            @include mediaQuery('1024'){
+                font-size: 11.5px;
+            }
             &:hover{
                 color: $c1;
                 transition: 1s ease;

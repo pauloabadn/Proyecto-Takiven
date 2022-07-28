@@ -31,6 +31,10 @@ main {
     main .contenedor .boton_general {
       text-align: center;
       margin-top: 6%; }
+      @media screen and (max-width: 1024px) {
+        main .contenedor .boton_general {
+          text-align: center;
+          margin-top: 4%; } }
       main .contenedor .boton_general a {
         font-size: 20px;
         font-weight: 700;
@@ -48,6 +52,12 @@ main {
       /*CARACTERISTICAS*/
       display: grid;
       grid-template-columns: repeat(4, 1fr); }
+      @media screen and (max-width: 768px) {
+        main .contenedor .principal {
+          grid-template-columns: 1fr 1fr; } }
+      @media screen and (max-width: 501px) {
+        main .contenedor .principal {
+          grid-template-columns: 1fr; } }
       main .contenedor .principal .secundario {
         display: grid;
         grid-template-rows: 1fr 0.4fr 0.5fr;
@@ -56,8 +66,14 @@ main {
         justify-items: center;
         text-align: center;
         gap: 5%; }
+        @media screen and (max-width: 1024px) {
+          main .contenedor .principal .secundario {
+            grid-template-rows: 0fr 0.4fr 0.5fr; } }
         main .contenedor .principal .secundario img {
           width: 100%; }
+        @media screen and (max-width: 1024px) {
+          main .contenedor .principal .secundario h3 {
+            font-size: 15px; } }
     main .contenedor .texto_como {
       /*COMO FUNCIONA*/
       text-align: center;
@@ -67,6 +83,11 @@ main {
         margin-bottom: 2%;
         font-size: 35px;
         color: #F9D163; }
+        @media screen and (max-width: 501px) {
+          main .contenedor .texto_como h3 {
+            font-size: 25px; } }
+      main .contenedor .texto_como p {
+        font-size: 15px; }
     main .contenedor .pasos_como {
       display: grid;
       gap: 50px; }
@@ -74,6 +95,10 @@ main {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 10px; }
+        @media screen and (max-width: 501px) {
+          main .contenedor .pasos_como .caja {
+            grid-template-columns: 1fr;
+            gap: 5px; } }
         main .contenedor .pasos_como .caja div {
           display: grid;
           align-items: center;
@@ -98,6 +123,12 @@ main {
             main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .ultimo h3 {
               font-weight: 400;
               font-size: 16px; }
+              @media screen and (max-width: 1024px) {
+                main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .ultimo h3 {
+                  font-size: 14px; } }
+            @media screen and (max-width: 1024px) {
+              main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .ultimo p {
+                font-size: 13px; } }
           main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .blanco {
             color: white; }
         main .contenedor .main_planes .contenedor_texto_planes .verde {
@@ -127,16 +158,41 @@ main {
     padding: 0 15%;
     background: url(../imagenes/fondoprincipal.png);
     background-position: sticky; }
+    @media screen and (max-width: 1024px) {
+      main .contenedor_home {
+        align-items: center; } }
+    @media screen and (max-width: 501px) {
+      main .contenedor_home {
+        grid-template-columns: 1fr; } }
     main .contenedor_home .texto_home {
       display: grid;
       grid-template-rows: 200px 100px;
       gap: 10px 100px;
       padding: 15% 0; }
+      @media screen and (max-width: 501px) {
+        main .contenedor_home .texto_home {
+          grid-template-columns: 150px 100px; } }
       main .contenedor_home .texto_home h1 {
         color: #FCD462;
         font-size: 50px; }
+        @media screen and (max-width: 1024px) {
+          main .contenedor_home .texto_home h1 {
+            font-size: 40px; } }
+        @media screen and (max-width: 501px) {
+          main .contenedor_home .texto_home h1 {
+            font-size: 30px; } }
       main .contenedor_home .texto_home p {
         font-size: 20px; }
+        @media screen and (max-width: 1024px) {
+          main .contenedor_home .texto_home p {
+            font-size: 15px; } }
+        @media screen and (max-width: 501px) {
+          main .contenedor_home .texto_home p {
+            font-size: 13.5px;
+            font-weight: 300; } }
+      @media screen and (max-width: 1024px) {
+        main .contenedor_home .texto_home .texto_home_boton a {
+          font-size: 15px; } }
       main .contenedor_home .texto_home .texto_home_boton a:hover {
         color: #3FD077;
         background-color: transparent;
@@ -155,13 +211,28 @@ footer {
   padding: 2% 15%;
   background-color: #2B2B2B;
   color: white; }
+  @media screen and (max-width: 501px) {
+    footer {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      grid-template-columns: 1fr; } }
   footer .mapa h2 {
     margin-bottom: 10px; }
   footer .mapa iframe {
     border-radius: 15px; }
+    @media screen and (max-width: 1024px) {
+      footer .mapa iframe {
+        width: 300px; } }
+    @media screen and (max-width: 768px) {
+      footer .mapa iframe {
+        width: 250px; } }
   footer .texto {
     display: grid;
     grid-template-rows: 0.5fr 0.5fr 0.5fr; }
+    @media screen and (max-width: 768px) {
+      footer .texto {
+        grid-template-rows: 0.9fr 0.5fr 0.5fr; } }
     footer .texto .suscribete h2 {
       margin-bottom: 10px; }
     footer .texto .suscribete form {
@@ -176,6 +247,15 @@ footer {
         position: absolute;
         padding: 10px;
         color: white; }
+        @media screen and (max-width: 1024px) {
+          footer .texto .suscribete form input {
+            height: 40px; } }
+        @media screen and (max-width: 768px) {
+          footer .texto .suscribete form input {
+            height: 40px; } }
+        @media screen and (max-width: 501px) {
+          footer .texto .suscribete form input {
+            position: inherit; } }
       footer .texto .suscribete form button {
         position: absolute;
         width: 20%;
@@ -186,6 +266,9 @@ footer {
         border-radius: 10px;
         color: white;
         font-weight: 700; }
+        @media screen and (max-width: 1024px) {
+          footer .texto .suscribete form button {
+            left: 87%; } }
     footer .texto .contactanos ul {
       list-style: none;
       margin-top: 10px; }
@@ -196,6 +279,9 @@ footer {
       footer .texto .siguenos ul li {
         padding-left: 2%;
         display: inline; }
+      @media screen and (max-width: 501px) {
+        footer .texto .siguenos ul {
+          padding: 0; } }
 
 .copyright {
   text-align: center;
@@ -203,6 +289,9 @@ footer {
   width: 100%;
   color: white;
   padding-bottom: 10px; }
+  @media screen and (max-width: 501px) {
+    .copyright {
+      font-size: 12px; } }
 
 /*BOSTRAP*/
 .accordion-flush {
@@ -232,10 +321,18 @@ footer {
   transition: 1s ease;
   border: #FCD462 solid 0px; }
 
+@media screen and (max-width: 768px) {
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+    justify-content: center; } }
+
 .navbar-expand-lg .navbar-nav .nav-link {
   font-family: 'Roboto';
   font-weight: 500;
   color: white; }
+  @media screen and (max-width: 1024px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: 11.5px; } }
   .navbar-expand-lg .navbar-nav .nav-link:hover {
     color: #FCD462;
     transition: 1s ease; }
