@@ -166,12 +166,14 @@ main {
         grid-template-columns: 1fr; } }
     main .contenedor_home .texto_home {
       display: grid;
-      grid-template-rows: 180px 100px;
+      grid-template-rows: 180px 90px 50px;
       gap: 10px 100px;
       padding: 15% 0; }
       @media screen and (max-width: 501px) {
         main .contenedor_home .texto_home {
-          grid-template-columns: 150px 90px; } }
+          grid-template-columns: 1fr;
+          grid-template-rows: 100px 90px 50px;
+          padding-bottom: 0; } }
       main .contenedor_home .texto_home h1 {
         color: #FCD462;
         font-size: 50px;
@@ -266,7 +268,7 @@ footer {
       footer .texto .suscribete form button {
         position: absolute;
         width: 20%;
-        left: 84%;
+        left: 80%;
         height: 40px;
         background-color: #3fcf78;
         border: 0px;
@@ -276,9 +278,15 @@ footer {
         @media screen and (max-width: 1024px) {
           footer .texto .suscribete form button {
             left: 87%; } }
+        @media screen and (max-width: 501px) {
+          footer .texto .suscribete form button {
+            left: 80%; } }
     footer .texto .contactanos ul {
       list-style: none;
       margin-top: 10px; }
+      @media screen and (max-width: 501px) {
+        footer .texto .contactanos ul {
+          padding: 0; } }
     footer .texto .siguenos h2 {
       margin-bottom: 2%; }
     footer .texto .siguenos ul {
@@ -291,16 +299,18 @@ footer {
           padding: 0; } }
 
 .copyright {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
+  height: 40px;
   width: 100%;
-  color: white;
-  padding-bottom: 10px; }
+  color: white; }
+  .copyright p {
+    margin-bottom: 0; }
   @media screen and (max-width: 501px) {
     .copyright {
-      font-size: 12px; }
-      .copyright p {
-        margin-bottom: 0; } }
+      font-size: 12px; } }
 
 /*BOSTRAP*/
 .accordion-flush {

@@ -25,11 +25,13 @@ $medidas:(
  /*MIXIN*/
 
  @mixin copyright ($bgcolor, $txcolor) {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:$bgcolor ;
+    height: 40px;
     width: 100%;
-    color:$txcolor;
-    padding-bottom: 10px; }
+    color:$txcolor;}
 
 @mixin mediaQuery($pantalla) {
     @if $pantalla == '1024'{

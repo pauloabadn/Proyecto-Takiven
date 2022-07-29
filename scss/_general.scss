@@ -189,11 +189,13 @@ main{
         }
         .texto_home{
             display: grid;
-            grid-template-rows: 180px 100px ;
+            grid-template-rows: 180px 90px 50px;
             gap: 10px 100px;
             padding: 15% 0;
             @include mediaQuery('501'){
-                grid-template-columns: 150px 90px;
+                grid-template-columns: 1fr;
+                grid-template-rows:100px 90px 50px;
+                padding-bottom: 0;
             }
             h1{
                 color: $c1;
@@ -308,7 +310,7 @@ footer{
                 button{
                     position: absolute;
                     width: 20%;
-                    left: 84%;
+                    left: 80%;
                     height: 40px;
                     background-color:#3fcf78 ;
                     border: 0px;
@@ -318,6 +320,9 @@ footer{
                     @include mediaQuery('1024'){
                         left: 87%;
                     }
+                    @include mediaQuery('501'){
+                        left: 80%;
+                    }
                 }
             }
         }
@@ -325,6 +330,9 @@ footer{
             ul{
                 list-style: none;
                 margin-top: 10px;
+                @include mediaQuery('501'){
+                    padding: 0;
+                }
             }
         }
         .siguenos{
@@ -346,12 +354,12 @@ footer{
 }
 
 .copyright{
+    p{
+        margin-bottom: 0;
+    }
     @include copyright (black, white);
     @include mediaQuery('501'){
         font-size: 12px;
-        p{
-            margin-bottom: 0;
-        }
     }
 }
 
