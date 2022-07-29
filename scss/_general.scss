@@ -194,11 +194,11 @@ main{
             padding: 15% 0;
             @include mediaQuery('501'){
                 grid-template-columns: 1fr;
-                grid-template-rows:100px 90px 50px;
+                grid-template-rows:140px 90px 50px;
                 padding-bottom: 0;
             }
             @include mediaQuery('376'){
-                grid-template-rows:120px 90px 50px;
+                grid-template-rows:140px 90px 70px;
             }
             h1{
                 color: $c1;
@@ -364,6 +364,10 @@ footer{
     @include mediaQuery('501'){
         font-size: 12px;
     }
+    @include mediaQuery('376'){
+        text-align: center;
+        font-size: 10px;
+    }
 }
 
 /*BOSTRAP*/
@@ -437,5 +441,8 @@ footer{
     width: map-get($medidas, xs);
     img{
         width: 100%;
+    }
+    @include mediaQuery('376'){
+        width: 150px;
     }
 }

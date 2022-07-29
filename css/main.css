@@ -172,11 +172,11 @@ main {
       @media screen and (max-width: 501px) {
         main .contenedor_home .texto_home {
           grid-template-columns: 1fr;
-          grid-template-rows: 100px 90px 50px;
+          grid-template-rows: 140px 90px 50px;
           padding-bottom: 0; } }
       @media screen and (max-width: 376px) {
         main .contenedor_home .texto_home {
-          grid-template-rows: 120px 90px 50px; } }
+          grid-template-rows: 140px 90px 70px; } }
       main .contenedor_home .texto_home h1 {
         color: #FCD462;
         font-size: 50px;
@@ -314,6 +314,10 @@ footer {
   @media screen and (max-width: 501px) {
     .copyright {
       font-size: 12px; } }
+  @media screen and (max-width: 376px) {
+    .copyright {
+      text-align: center;
+      font-size: 10px; } }
 
 /*BOSTRAP*/
 .accordion-flush {
@@ -374,6 +378,9 @@ footer {
   width: 200px; }
   .navbar-brand img {
     width: 100%; }
+  @media screen and (max-width: 376px) {
+    .navbar-brand {
+      width: 150px; } }
 
 /*EXTEND*/
 main .contenedor_home .texto_home .texto_home_boton a {
