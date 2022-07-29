@@ -174,6 +174,9 @@ main {
           grid-template-columns: 1fr;
           grid-template-rows: 100px 90px 50px;
           padding-bottom: 0; } }
+      @media screen and (max-width: 376px) {
+        main .contenedor_home .texto_home {
+          grid-template-rows: 120px 90px 50px; } }
       main .contenedor_home .texto_home h1 {
         color: #FCD462;
         font-size: 50px;

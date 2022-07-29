@@ -197,6 +197,9 @@ main{
                 grid-template-rows:100px 90px 50px;
                 padding-bottom: 0;
             }
+            @include mediaQuery('376'){
+                grid-template-rows:120px 90px 50px;
+            }
             h1{
                 color: $c1;
                 font-size: 50px;
