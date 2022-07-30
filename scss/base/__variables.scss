@@ -34,6 +34,11 @@ $medidas:(
     color:$txcolor;}
 
 @mixin mediaQuery($pantalla) {
+    @if $pantalla == '2560'{
+        @media screen and (max-width: 2560px){
+            @content
+        } 
+    };
     @if $pantalla == '1024'{
         @media screen and (max-width: 1024px){
             @content
@@ -51,6 +56,11 @@ $medidas:(
     };
     @if $pantalla == '376'{
         @media screen and (max-width: 376px){
+            @content
+        } 
+    };
+    @if $pantalla == '376'{
+        @media screen and (max-width: 502px){
             @content
         } 
     }

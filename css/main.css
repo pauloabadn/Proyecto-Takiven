@@ -91,6 +91,12 @@ main {
     main .contenedor .pasos_como {
       display: grid;
       gap: 50px; }
+      @media screen and (max-width: 376px) {
+        main .contenedor .pasos_como {
+          gap: 10px; } }
+      @media screen and (max-width: 502px) {
+        main .contenedor .pasos_como {
+          gap: 10px; } }
       main .contenedor .pasos_como .caja {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -105,14 +111,47 @@ main {
           justify-items: center;
           justify-content: center;
           text-align: center; }
+        @media screen and (max-width: 376px) {
+          main .contenedor .pasos_como .caja .next {
+            display: none; } }
+        @media screen and (max-width: 502px) {
+          main .contenedor .pasos_como .caja .next {
+            display: none; } }
     main .contenedor .main_planes {
       /*PLANES Y PRECIOS*/
       width: 100%; }
       main .contenedor .main_planes .contenedor_texto_planes {
         display: grid; }
+        @media screen and (max-width: 501px) {
+          main .contenedor .main_planes .contenedor_texto_planes {
+            border: 10px solid #FCD462; } }
         main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr; }
+          @media screen and (max-width: 501px) {
+            main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos {
+              grid-template-columns: 1fr;
+              grid-template-rows: 40px 20px;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              padding-bottom: 10px; }
+              main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .twh {
+                color: white;
+                text-align: left;
+                padding-left: 5px; }
+              main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos h3 {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 0; }
+              main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos p {
+                margin-bottom: 0; } }
+          @media screen and (max-width: 376px) {
+            main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .pwh {
+              font-size: 13px; } }
+          @media screen and (max-width: 502px) {
+            main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .pwh {
+              font-size: 13px; } }
           main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .ultimo {
             height: 80px;
             display: grid;
@@ -134,7 +173,20 @@ main {
         main .contenedor .main_planes .contenedor_texto_planes .verde {
           background-color: #3FD077; }
         main .contenedor .main_planes .contenedor_texto_planes .plomo {
-          background-color: white; }
+          background-color: #DFE6DA; }
+      @media screen and (max-width: 501px) {
+        main .contenedor .main_planes .on {
+          display: none; } }
+      @media screen and (max-width: 2560px) {
+        main .contenedor .main_planes .of {
+          display: none; } }
+      @media screen and (max-width: 501px) {
+        main .contenedor .main_planes .of {
+          display: grid; } }
+      @media screen and (max-width: 501px) {
+        main .contenedor .main_planes .sb {
+          border: 0;
+          margin: 20px 0; } }
     main .contenedor .registrate_aqui {
       align-items: center;
       text-align: center; }
@@ -177,6 +229,9 @@ main {
       @media screen and (max-width: 376px) {
         main .contenedor_home .texto_home {
           grid-template-rows: 140px 90px 70px; } }
+      @media screen and (max-width: 502px) {
+        main .contenedor_home .texto_home {
+          grid-template-rows: 140px 90px 70px; } }
       main .contenedor_home .texto_home h1 {
         color: #FCD462;
         font-size: 50px;
@@ -210,7 +265,7 @@ main {
           background-color: transparent;
           transition: 1s ease-in-out; }
     main .contenedor_home img {
-      width: 100%; }
+      width: 120%; }
   main .titulopreguntas {
     /*PREGUNTAS Y DUDAS*/
     font-family: 'Roboto';
@@ -313,10 +368,13 @@ footer {
     margin-bottom: 0; }
   @media screen and (max-width: 501px) {
     .copyright {
+      text-align: center;
       font-size: 12px; } }
   @media screen and (max-width: 376px) {
     .copyright {
-      text-align: center;
+      font-size: 10px; } }
+  @media screen and (max-width: 502px) {
+    .copyright {
       font-size: 10px; } }
 
 /*BOSTRAP*/
@@ -379,6 +437,9 @@ footer {
   .navbar-brand img {
     width: 100%; }
   @media screen and (max-width: 376px) {
+    .navbar-brand {
+      width: 150px; } }
+  @media screen and (max-width: 502px) {
     .navbar-brand {
       width: 150px; } }
 

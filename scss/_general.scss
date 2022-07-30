@@ -95,6 +95,9 @@ main{
         .pasos_como{
             display: grid;
             gap: 50px;
+            @include mediaQuery('376'){
+                gap:10px;
+                }
             .caja{
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
@@ -110,15 +113,49 @@ main{
                     justify-content: center;
                     text-align: center;
                 }
+                .next{
+                    @include mediaQuery('376'){
+                    display: none;
+                    }
+                }
             }
         }
         .main_planes{/*PLANES Y PRECIOS*/
             width: 100%;
             .contenedor_texto_planes{
                 display: grid;
+                @include mediaQuery('501'){
+                    border: 10px solid $c1;
+                }
                 .contenedor_titulos{
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
+                    @include mediaQuery('501'){
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 40px 20px;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                        padding-bottom: 10px;
+                        .twh{
+                            color: $c3;
+                            text-align: left;
+                            padding-left: 5px;
+                        }
+                        h3{
+                            font-size: 16px;
+                            font-weight: 500;
+                            margin-bottom: 0;
+                        }
+                        p{
+                            margin-bottom: 0;
+                        }
+                        }
+                        @include mediaQuery('376'){
+                            .pwh{
+                                font-size: 13px;
+                            }
+                        }
                     .ultimo{
                         height: 80px;
                         display: grid;
@@ -148,9 +185,30 @@ main{
                     background-color: $c0;
                 }
                 .plomo{
-                    background-color: $c3;
+                    background-color: #DFE6DA;
                 }
-
+            }
+            .on{
+                @include mediaQuery('501'){
+                display: none;
+                }
+            }
+            .of{
+                @include mediaQuery('2560'){
+                display: none;
+                }
+            }
+            .of{
+                @include mediaQuery('501'){
+                display: grid;
+                }
+            }
+            
+            .sb{
+                @include mediaQuery('501'){
+                    border: 0;
+                    margin: 20px 0;
+                }
             }
         }
         .registrate_aqui{
@@ -241,7 +299,7 @@ main{
             }
         }
         img{
-            width:100%;
+            width:120%;
         }
     }
     .titulopreguntas{ /*PREGUNTAS Y DUDAS*/
@@ -362,10 +420,10 @@ footer{
     }
     @include copyright (black, white);
     @include mediaQuery('501'){
+        text-align: center;
         font-size: 12px;
     }
     @include mediaQuery('376'){
-        text-align: center;
         font-size: 10px;
     }
 }
