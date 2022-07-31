@@ -66,12 +66,24 @@ main{
                 @include mediaQuery('1024'){
                     grid-template-rows: 0fr 0.4fr 0.5fr;
                 }
+                @include mediaQuery('501'){
+                    gap:0;
+                    margin: 0;
+                }
                 img{
                     width: 100%;
+                    @include mediaQuery('501'){
+                        width: 80%;
+                    }
                 }
                 h3{
                     @include mediaQuery('1024'){
                         font-size: 15px;
+                    }
+                    @include mediaQuery('501'){
+                        br{
+                            display: none;
+                        }
                     }
                 }
             }
@@ -86,10 +98,14 @@ main{
                 color: #F9D163;
                 @include mediaQuery('501'){
                     font-size: 25px;
+                    font-weight: 600;
                 }
             }
             p{
-                font-size: 15px;
+                font-size: 20px;
+                @include mediaQuery('501'){
+                    font-size: 15px;
+                }
             }
         }
         .pasos_como{
@@ -219,9 +235,8 @@ main{
                 font-size: 26px;
             }
             form{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                display: grid;
+                justify-items: center;
                 input{
                     width: 50%;
                     height: 50px;
@@ -229,6 +244,15 @@ main{
                     padding: 0.5%;
                     border: $c0 solid 2px;
                     border-radius: 20px;
+                }
+                div{
+                    width: 40%;
+                    .input_radio{
+                        width: 20px;
+                        height: 15px;
+                        margin: 0;
+                        font-weight: 700;
+                    }
                 }
             }
         }

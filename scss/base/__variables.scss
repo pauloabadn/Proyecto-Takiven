@@ -58,10 +58,5 @@ $medidas:(
         @media screen and (max-width: 376px){
             @content
         } 
-    };
-    @if $pantalla == '376'{
-        @media screen and (max-width: 502px){
-            @content
-        } 
     }
 }

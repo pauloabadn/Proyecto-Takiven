@@ -69,11 +69,21 @@ main {
         @media screen and (max-width: 1024px) {
           main .contenedor .principal .secundario {
             grid-template-rows: 0fr 0.4fr 0.5fr; } }
+        @media screen and (max-width: 501px) {
+          main .contenedor .principal .secundario {
+            gap: 0;
+            margin: 0; } }
         main .contenedor .principal .secundario img {
           width: 100%; }
+          @media screen and (max-width: 501px) {
+            main .contenedor .principal .secundario img {
+              width: 80%; } }
         @media screen and (max-width: 1024px) {
           main .contenedor .principal .secundario h3 {
             font-size: 15px; } }
+        @media screen and (max-width: 501px) {
+          main .contenedor .principal .secundario h3 br {
+            display: none; } }
     main .contenedor .texto_como {
       /*COMO FUNCIONA*/
       text-align: center;
@@ -85,16 +95,17 @@ main {
         color: #F9D163; }
         @media screen and (max-width: 501px) {
           main .contenedor .texto_como h3 {
-            font-size: 25px; } }
+            font-size: 25px;
+            font-weight: 600; } }
       main .contenedor .texto_como p {
-        font-size: 15px; }
+        font-size: 20px; }
+        @media screen and (max-width: 501px) {
+          main .contenedor .texto_como p {
+            font-size: 15px; } }
     main .contenedor .pasos_como {
       display: grid;
       gap: 50px; }
       @media screen and (max-width: 376px) {
-        main .contenedor .pasos_como {
-          gap: 10px; } }
-      @media screen and (max-width: 502px) {
         main .contenedor .pasos_como {
           gap: 10px; } }
       main .contenedor .pasos_como .caja {
@@ -112,9 +123,6 @@ main {
           justify-content: center;
           text-align: center; }
         @media screen and (max-width: 376px) {
-          main .contenedor .pasos_como .caja .next {
-            display: none; } }
-        @media screen and (max-width: 502px) {
           main .contenedor .pasos_como .caja .next {
             display: none; } }
     main .contenedor .main_planes {
@@ -147,9 +155,6 @@ main {
               main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos p {
                 margin-bottom: 0; } }
           @media screen and (max-width: 376px) {
-            main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .pwh {
-              font-size: 13px; } }
-          @media screen and (max-width: 502px) {
             main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .pwh {
               font-size: 13px; } }
           main .contenedor .main_planes .contenedor_texto_planes .contenedor_titulos .ultimo {
@@ -194,9 +199,8 @@ main {
         color: #FCD462;
         font-size: 26px; }
       main .contenedor .registrate_aqui form {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
+        display: grid;
+        justify-items: center; }
         main .contenedor .registrate_aqui form input {
           width: 50%;
           height: 50px;
@@ -204,6 +208,13 @@ main {
           padding: 0.5%;
           border: #3FD077 solid 2px;
           border-radius: 20px; }
+        main .contenedor .registrate_aqui form div {
+          width: 40%; }
+          main .contenedor .registrate_aqui form div .input_radio {
+            width: 20px;
+            height: 15px;
+            margin: 0;
+            font-weight: 700; }
   main .contenedor_home {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,9 +238,6 @@ main {
           grid-template-rows: 140px 90px 50px;
           padding-bottom: 0; } }
       @media screen and (max-width: 376px) {
-        main .contenedor_home .texto_home {
-          grid-template-rows: 140px 90px 70px; } }
-      @media screen and (max-width: 502px) {
         main .contenedor_home .texto_home {
           grid-template-rows: 140px 90px 70px; } }
       main .contenedor_home .texto_home h1 {
@@ -373,9 +381,6 @@ footer {
   @media screen and (max-width: 376px) {
     .copyright {
       font-size: 10px; } }
-  @media screen and (max-width: 502px) {
-    .copyright {
-      font-size: 10px; } }
 
 /*BOSTRAP*/
 .accordion-flush {
@@ -437,9 +442,6 @@ footer {
   .navbar-brand img {
     width: 100%; }
   @media screen and (max-width: 376px) {
-    .navbar-brand {
-      width: 150px; } }
-  @media screen and (max-width: 502px) {
     .navbar-brand {
       width: 150px; } }
 
