@@ -27,13 +27,13 @@ main {
   background: url(../imagenes/fondoprincipal.png);
   background-position: sticky; }
   main .contenedor {
-    padding: 5% 10%; }
+    padding: 2% 10%; }
     main .contenedor .boton_general {
-      text-align: center;
-      margin-top: 6%; }
+      display: flex;
+      justify-content: center;
+      margin-top: 2%; }
       @media screen and (max-width: 1024px) {
         main .contenedor .boton_general {
-          text-align: center;
           margin-top: 4%; } }
       main .contenedor .boton_general a {
         font-size: 20px;
@@ -193,23 +193,25 @@ main {
           border: 0;
           margin: 20px 0; } }
     main .contenedor .registrate_aqui {
+      /*Registrate Aqiu*/
       align-items: center;
       text-align: center; }
       main .contenedor .registrate_aqui h2 {
         color: #FCD462;
-        font-size: 26px; }
+        font-size: 35git px;
+        font-weight: 600; }
       main .contenedor .registrate_aqui form {
         display: grid;
         justify-items: center; }
         main .contenedor .registrate_aqui form input {
-          width: 50%;
+          width: 30%;
           height: 50px;
           margin: 1% 0;
-          padding: 0.5%;
+          padding: 1%;
           border: #3FD077 solid 2px;
           border-radius: 20px; }
         main .contenedor .registrate_aqui form div {
-          width: 40%; }
+          width: 30%; }
           main .contenedor .registrate_aqui form div .input_radio {
             width: 20px;
             height: 15px;

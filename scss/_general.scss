@@ -22,12 +22,12 @@ main{
     background:url(../imagenes/fondoprincipal.png);
     background-position: sticky;
     .contenedor{
-        padding: 5% 10%;
+        padding: 2% 10%;
         .boton_general{
-            text-align: center;
-            margin-top: 6%;
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
             @include mediaQuery('1024'){
-                text-align: center;
                 margin-top: 4%;
             }
             a{
@@ -227,26 +227,27 @@ main{
                 }
             }
         }
-        .registrate_aqui{
+        .registrate_aqui{ /*Registrate Aqiu*/
             align-items: center;
             text-align: center;
             h2{
                 color: $c1;
-                font-size: 26px;
+                font-size:35git px;
+                font-weight: 600;
             }
             form{
                 display: grid;
                 justify-items: center;
                 input{
-                    width: 50%;
+                    width: 30%;
                     height: 50px;
                     margin: 1% 0;
-                    padding: 0.5%;
+                    padding: 1%;
                     border: $c0 solid 2px;
                     border-radius: 20px;
                 }
                 div{
-                    width: 40%;
+                    width: 30%;
                     .input_radio{
                         width: 20px;
                         height: 15px;
