@@ -34,7 +34,7 @@ main {
       margin-top: 2%; }
       @media screen and (max-width: 1024px) {
         main .contenedor .boton_general {
-          margin-top: 4%; } }
+          margin-top: 0%; } }
       main .contenedor .boton_general a {
         font-size: 20px;
         font-weight: 700;
@@ -71,6 +71,7 @@ main {
             grid-template-rows: 0fr 0.4fr 0.5fr; } }
         @media screen and (max-width: 501px) {
           main .contenedor .principal .secundario {
+            grid-template-rows: 0.5fr 0.2fr 0.3fr;
             gap: 0;
             margin: 0; } }
         main .contenedor .principal .secundario img {
@@ -193,7 +194,7 @@ main {
           border: 0;
           margin: 20px 0; } }
     main .contenedor .registrate_aqui {
-      /*Registrate Aqiu*/
+      /*Registrate Aqui*/
       align-items: center;
       text-align: center; }
       main .contenedor .registrate_aqui h2 {
@@ -210,8 +211,15 @@ main {
           padding: 1%;
           border: #3FD077 solid 2px;
           border-radius: 20px; }
+          @media screen and (max-width: 501px) {
+            main .contenedor .registrate_aqui form input {
+              width: 80%; } }
         main .contenedor .registrate_aqui form div {
           width: 30%; }
+          @media screen and (max-width: 501px) {
+            main .contenedor .registrate_aqui form div {
+              margin: 2% 0;
+              width: 80%; } }
           main .contenedor .registrate_aqui form div .input_radio {
             width: 20px;
             height: 15px;
@@ -424,20 +432,24 @@ footer {
   @media screen and (max-width: 1024px) {
     .navbar-expand-lg .navbar-nav .nav-link {
       font-size: 11.5px; } }
+  @media screen and (max-width: 501px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+      font-size: 14px; } }
   .navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #FCD462;
+    color: #34A560;
     transition: 1s ease; }
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
   color: #F9D163;
-  font-weight: 400; }
+  font-weight: 500; }
 
 .collapse {
   justify-content: end; }
 
 .registro {
   background-color: #FCD462;
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 0 15px; }
 
 .navbar-brand {
   width: 200px; }
