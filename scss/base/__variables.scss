@@ -49,6 +49,16 @@ $medidas:(
             @content
         } 
     };
+    @if $pantalla == '739'{
+        @media screen and (max-width: 739px){
+            @content
+        } 
+    };
+    @if $pantalla == '680'{
+        @media screen and (max-width: 680px){
+            @content
+        } 
+    };
     @if $pantalla == '501'{
         @media screen and (max-width: 501px){
             @content

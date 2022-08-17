@@ -131,7 +131,7 @@ main{
                     text-align: center;
                 }
                 .next{
-                    @include mediaQuery('376'){
+                    @include mediaQuery('501'){
                     display: none;
                     }
                 }
@@ -275,6 +275,9 @@ main{
         @include mediaQuery('1024'){
             align-items: center;
         }
+        @include mediaQuery('680'){
+            grid-template-columns: 1fr;
+        }
         @include mediaQuery('501'){
             grid-template-columns: 1fr;
         }
@@ -283,6 +286,11 @@ main{
             grid-template-rows: 180px 90px 50px;
             gap: 10px 100px;
             padding: 15% 0;
+            @include mediaQuery('680'){
+                grid-template-columns: 1fr;
+                grid-template-rows:140px 90px 50px;
+                padding-bottom: 0;
+            }
             @include mediaQuery('501'){
                 grid-template-columns: 1fr;
                 grid-template-rows:140px 90px 50px;
@@ -349,6 +357,12 @@ footer{
     padding: 2% 15%;
     background-color: #2B2B2B;
     color: $c3;
+    @include mediaQuery('739'){
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
     @include mediaQuery('501'){
         align-items: center;
         justify-content: center;
@@ -357,6 +371,7 @@ footer{
     }
     .mapa{
         h2{
+            margin-bottom: 10px;
             @include mediaQuery('768'){
                 font-size: 24px;}
         }
@@ -381,6 +396,8 @@ footer{
         .suscribete{
             h2{
                 margin-bottom: 10px;
+                @include mediaQuery('768'){
+                    font-size: 24px;}
             }
             form{
                 width: 100%;
@@ -399,6 +416,9 @@ footer{
                     }
                     @include mediaQuery('768'){
                         height: 40px;
+                    }
+                    @include mediaQuery('739'){
+                        position: inherit;
                     }
                     @include mediaQuery('501'){
                         position: inherit;
@@ -424,10 +444,14 @@ footer{
             }
         }
         .contactanos{
+            h2{
+                @include mediaQuery('768'){
+                    font-size: 24px;}
+            }
             ul{
                 list-style: none;
                 margin-top: 10px;
-                @include mediaQuery('501'){
+                @include mediaQuery('739'){
                     padding: 0;
                 }
             }
@@ -435,6 +459,8 @@ footer{
         .siguenos{
             h2{
                 margin-bottom: 2%;
+                @include mediaQuery('768'){
+                    font-size: 24px;}
             }
             ul{
                 list-style: none;
@@ -442,7 +468,7 @@ footer{
                     padding-left: 2%;
                     display: inline;
                 }
-                @include mediaQuery('501'){
+                @include mediaQuery('739'){
                     padding: 0
                 }
             }
