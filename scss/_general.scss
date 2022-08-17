@@ -358,9 +358,7 @@ footer{
     .mapa{
         h2{
             @include mediaQuery('768'){
-                font-size: 24px;
-             }
-            margin-bottom: 10px;
+                font-size: 24px;}
         }
         iframe{
             border-radius: 15px;
